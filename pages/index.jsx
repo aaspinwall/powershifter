@@ -9,36 +9,29 @@ const Main = styled.main`
   padding: 2rem;
 `;
 
-const BG = styled.div`
-  background-image: url("imgs/waterfall.jpg");
-  background-size: cover;
-  /*   ::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 2rem;
-    height: 100%;
-    width: 100%;
-    opacity: 0.4;
-    background-image: radial-gradient(
-      circle at 195% 14%,
-      hsl(341.82, 48.77%, 60.2%) 50%,
-      hsl(235.52, 35.08%, 37.45%) 75%
-    );
-  } */
+const BodyWrapper = styled.div`
+  #bg {
+    background-image: url("imgs/waterfall.jpg"),
+      radial-gradient(
+        circle at 195% 14%,
+        hsl(341.82, 48.77%, 60.2%, 50%) 50%,
+        hsl(235.52, 35.08%, 37.45%, 50%) 75%
+      );
+    background-size: cover;
+    background-blend-mode: lighten;
+  }
 `;
 
 export default function Home() {
   return (
-    <div>
+    <BodyWrapper>
       <Head>
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <BG>
-        <header className='container p-4 '>
+      <div id='bg'>
+        <header className='p-4'>
           <nav className='flex justify-between items-center'>
             <div className='text-white'>LOGO</div>
             <ul className='flex gap-8 justify-center items-center text-white'>
@@ -52,7 +45,7 @@ export default function Home() {
         <Main>
           <Hero>Designing digital products is never easy. We can help.</Hero>
         </Main>
-      </BG>
+      </div>
 
       <footer className={styles.footer}>
         <a
@@ -63,6 +56,6 @@ export default function Home() {
           Powered by Vercel
         </a>
       </footer>
-    </div>
+    </BodyWrapper>
   );
 }
