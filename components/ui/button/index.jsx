@@ -10,7 +10,9 @@ const ButtonComponent = styled.button`
 
 const Button = ({ children }) => {
   return (
-    <ButtonComponent className={`bg-blue-800  text-white rounded-full p-3`}>
+    <ButtonComponent
+      className={`bg-blue-800  text-white rounded-full p-3 shadow-md`}
+    >
       {children}
     </ButtonComponent>
   );
