@@ -10,10 +10,12 @@ export default function Home() {
     <Layout seo={{ title: `WOP | Digital Agency` }}>
       <div id='bg' className='pt-32'>
         <main
-          className='relative pt-10 px-8 pb-8 flex box'
+          className='relative pt-10 pb-8 flex box'
           style={{ minHeight: "calc(64vh - 7rem)" }}
         >
-          <Hero>Designing digital products is never easy. We can help.</Hero>
+          <section>
+            <Hero>Designing digital products is never easy. We can help.</Hero>
+          </section>
         </main>
       </div>
       <section className='bg-blue-600 '>
