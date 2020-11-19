@@ -1,14 +1,9 @@
 import React from "react";
-import styled from "styled-components";
+import { H1 } from "../heading";
 
-const H1 = styled.h1`
-  font-size: clamp(4rem, 10vw, 150px);
-  line-height: clamp(4rem, 10vw, 150px);
-`;
-
-const Hero = ({ children }) => {
+const Hero = ({ children, ...props }) => {
   return (
-    <H1 className='text-white font-black tracking-tighter max-w-6xl mx-auto '>
+    <H1 className={`text-white font-black tracking-tighter ${props.className}`}>
       {children}
     </H1>
   );

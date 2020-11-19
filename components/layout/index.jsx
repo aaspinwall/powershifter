@@ -4,8 +4,13 @@ import Footer from "../ui/footer";
 import styled from "styled-components";
 
 const BodyWrapper = styled.div`
+  .box {
+    max-width: 73rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
   section {
-    padding: 2rem;
+    padding: clamp(2rem, 8vw, 6rem);
   }
   #bg {
     background-image: radial-gradient(
