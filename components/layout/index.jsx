@@ -3,12 +3,22 @@ import Nav from "../ui/navbar";
 import Footer from "../ui/footer";
 import styled from "styled-components";
 
+// Section has the background color and
+//it contains a div (className=box) with the default margin properties
+
 const BodyWrapper = styled.div`
   .box {
     max-width: 73rem;
     margin-left: auto;
     margin-right: auto;
   }
+  #top {
+    padding: clamp(10px, 1vw, 6rem) clamp(2rem, 8vw, 6rem) !important;
+  }
+  /* 
+  Section has the background color
+  it contains a div (className=box) with the default margin properties
+  */
   section {
     padding: clamp(2rem, 8vw, 6rem);
   }

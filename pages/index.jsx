@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/ui/hero";
+import Products from "../components/screens/products";
 import { H2 } from "../components/ui/heading";
 import styled from "styled-components";
 
@@ -10,16 +11,16 @@ export default function Home() {
     <Layout seo={{ title: `WOP | Digital Agency` }}>
       <div id='bg' className='pt-32'>
         <main
-          className='relative pt-10 pb-8 flex box'
+          className='relative  pb-8 flex box'
           style={{ minHeight: "calc(64vh - 7rem)" }}
         >
-          <section>
+          <section id='top'>
             <Hero>Designing digital products is never easy. We can help.</Hero>
           </section>
         </main>
       </div>
       <section className='bg-blue-600 '>
-        <div className='box max-w-5xl mx-auto gap-6 grid '>
+        <div className='box gap-6 grid '>
           <H2 className='text-3xl text-white leading-8 font-bold tracking-tighter mb-4'>
             We bring 11+ years of practice to help you navigate the complexities
             of designing, building, and scaling the right service for your
@@ -42,6 +43,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Products />
     </Layout>
   );
 }
