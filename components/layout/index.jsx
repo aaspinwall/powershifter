@@ -13,7 +13,8 @@ const BodyWrapper = styled.div`
     margin-right: auto;
   }
   #top {
-    padding: clamp(10px, 1vw, 6rem) clamp(2rem, 8vw, 6rem) !important;
+    padding: clamp(1rem, 1vw, 6rem) clamp(2rem, 8vw, 6rem) !important;
+    align-self: center;
   }
   /* 
   Section has the background color

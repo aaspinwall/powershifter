@@ -12,7 +12,7 @@ export default function Home() {
       <div id='bg' className='pt-32'>
         <main
           className='relative  pb-8 flex box'
-          style={{ minHeight: "calc(64vh - 7rem)" }}
+          style={{ minHeight: "calc(90vh - 7rem)" }}
         >
           <section id='top'>
             <Hero>Designing digital products is never easy. We can help.</Hero>

@@ -5,11 +5,12 @@ import Button from "../button";
 const Nav = () => {
   return (
     <header className='px-4 py-8 fixed top-0 left-0 w-full z-50'>
-      <nav className='flex justify-between items-center'>
-        <div className='text-white'>
+      {/* <nav className='grid grid-cols-2  '> */}
+      <nav className='flex justify-between items-center '>
+        <div className='text-white '>
           <Link href='/'>WOP</Link>
         </div>
-        <ul className='flex gap-8 justify-center items-center text-white'>
+        <ul className='flex gap-12 justify-center items-center text-white'>
           <li>
             <Link href='/'>Case Studies</Link>
           </li>

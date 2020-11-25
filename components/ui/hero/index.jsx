@@ -1,5 +1,5 @@
 import React from "react";
-import { H1 } from "../heading";
+import { H1, H1Q } from "../heading";
 
 const Hero = ({ children, ...props }) => {
   return (
